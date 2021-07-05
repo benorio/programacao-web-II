@@ -1,0 +1,94 @@
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px/1.4 arial, sans-serif;
+    background: #ddd;
+    color: #333;
+}
+
+.tudo {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.topo {
+    width: 100%;
+    line-height: 1;
+    padding: 1px 20px 10px 20px;
+}
+
+.topo h1 {
+    font-size: 36px;
+    margin: 4px 0 2px 0;
+    text-align: right;
+
+}
+
+.topo h2 {
+    font-size: 20px;
+    margin: 2px 0 4px 0;
+    text-align: right;
+}
+
+.topo a {
+    color: rgb(5, 87, 148);
+    text-decoration: none;
+}
+
+.topo ul li {
+    list-style: none;
+    display: inline;
+}
+
+.topo ul li a {
+    float: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-right: 1px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
+    background: rgb(5, 87, 148);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.topo ul li:last-child a {
+    border: none;
+}
+
+.topo ul li:last-child a:hover, .home .corrente {
+    color: white;
+    background: rgb(100, 150, 255);
+
+}
+
+.clear {
+    clear: both;
+}
+
+nav > ul {
+    width: 100%;
+    background: rgb(5, 87, 148);
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+nav {
+    border-top: 1px solid rgb(5, 87, 148);
+    width: 100%;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+}
+
+.button {
+    margin-left: 20px;
+}

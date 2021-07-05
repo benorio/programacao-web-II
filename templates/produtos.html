@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedra Real - Marmóres e Granitos</title>
+    <link rel="stylesheet" href="/static/normalize.css">
+    <link rel = "stylesheet" type = "text/css" href = "/static/styles.css"/>
+</head>
+<body class="home">
+    <div class="tudo">
+        <header class="topo">
+            <section>
+                <h1><a href="/">Site Pedra Real</a></h1>
+                <h2>Site destinado a divulgar o trabalho da empresa</h2>
+            </section>
+        </header>
+    </div>
+    <hr><br><br>
+    <div class="produtos">
+        <ul>
+        {%for tipo in tipos%}
+
+            <li>Tipos de {{tipo.name}}</li>
+            
+        {%endfor%}        
+        </ul>
+    </div>
+    <form class="button">
+        <label for="name">Nome do produto:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <input type="submit" value="Adicionar">
+    </form>
+    <div class = "button">
+        <button>Adicionar</button>
+        <button>Remover</button>
+    </div>
+</body>
+</html>

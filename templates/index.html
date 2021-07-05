@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedra Real - Marmóres e Granitos</title>
+    <link rel="stylesheet" href="/static/normalize.css">
+    <link rel = "stylesheet" type = "text/css" href = "/static/styles.css"/>
+</head>
+<body class="home">
+    <div class="tudo">
+        <header class="topo">
+            <section>
+                <h1><a href="/">Site Pedra Real</a></h1>
+                <h2>Site destinado a divulgar o trabalho da empresa</h2>
+            </section>
+            <nav>
+                <ul>
+                    <li><a class = "corrente" href="/">Home</a></li>
+                    <li><a href="sobre">Sobre a empresa</a></li>
+                    <li><a href="produtos">Cadastrar Produtos</a></li>
+                    <li><a href="obras">Obras</a></li>
+                    <li><a href="contatos">Contatos</a></li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <section>
+        <ul>
+            {% for tipo in tipos %}
+            <li>
+                <a href="produtos/{{tipo.id}}">{{tipo.name}}({{tipo.get_listar_produtos()|length}})</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    <!--
+        <footer>
+            <p> Copyright 2015 - Todos os direitos reservados </p>
+        </footer>
+
+    -->
+</body>
+</html>
